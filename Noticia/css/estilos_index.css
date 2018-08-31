@@ -1,0 +1,172 @@
+*
+{
+padding:0px;
+margin: 0px;
+}
+body
+{
+background:#FAFAFA;
+}
+
+div#contenido
+{/*Contiene todo el cuerpo de la pagina HTML*/
+max-width:1000px;
+margin:auto;
+width:auto;
+background:#ECE5E4;
+padding:20px;
+margin-top:10px;
+border:2px solid #A8A6A6;
+overflow:hidden;
+}
+header#contenedor
+{/*Contiene el Heder (Encabezado del menù logotipo -Encabezado -icono usuario)*/
+width:100%;
+margin:auto;
+overflow:hidden;
+}
+
+div#logo
+{/* Div que Contiene el logo de la NOTICIA*/
+width:100%;
+margin:0.50em auto;
+float:left;
+width:22%;
+height:100px;
+}
+div#texto
+{
+/*Div que contiene todos los textos del encabezado*/
+width:100%;
+margin:0.50em auto;
+width:60%;
+height:100px;
+float:left;
+}
+
+
+img#logotipo
+{/*Logotipo de la NOTICIA estilos de la imagen*/
+width:100%;
+height:auto;
+float: left;
+}
+
+h1
+{/*Contiene el texto NOTICIAS DEL MUNDO*/
+font-size:1.20em;
+text-align:center;
+padding:3px;
+margin:5px auto;
+font-family:"tahoma","arial";
+}
+h2
+{/*Contiene el texto del fecha*/
+text-align:center;
+font-size:1em;
+font-family:"tahoma","arial";
+font-weight:bold;
+}
+figure
+{
+	float: left;
+	padding: 0px 5px;
+}
+/*ESTILOS DEL Imagenes del FONDO DE SECTION*/
+#posicion
+{
+	
+	margin-left:220px;
+}
+
+#slider/*Esta es la Section*/
+{
+width:100%;
+overflow: hidden;
+margin-top:10px;
+float: left;
+
+}
+
+#sliderul 
+{
+display:flex;
+width: 300%;
+animation: cambio 20s infinite;
+}
+
+#sliderli 
+{
+width:1000px;
+list-style: none;
+float:left;
+}
+
+#sliderimg 
+{
+width:100%;
+margin:auto;
+min-height:50vh;
+}
+
+/*ESTE SON LOS ESTILOS DE HTML ECONOMIA*/
+
+video
+{
+width:auto;
+padding: 0px 5px;
+float:left;
+}
+
+p
+{
+text-align: justify;
+color: #0404B4;
+font-size:18px;
+}
+
+h2
+{
+	color: #0B0B3B;
+}
+
+h1
+{
+	color: #0A2A0A;
+/*---------------------------------------------------------*/
+}
+
+@keyframes cambio 
+
+{
+0% {margin-left: 0;}
+30% {margin-left: 0;}
+
+35% {margin-left: -100%;}
+45% {margin-left: -100%;}
+
+50% {margin-left: -200%;}
+70% {margin-left: -200%;}
+
+}
+
+footer
+{
+text-align:center;
+font-size:0.80em;
+color: blue;
+}
+
+/*Hacer el texto mas pequeño cuando se cambie de tamaño el ancho de pantalla*/
+@media screen and (max-width:980px){
+h1{font-size:18px;} h2{font-size:15px;} div#contenido{width:98%;}}
+
+@media screen and (max-width:800px){
+h1{font-size:15px;} h2{font-size:12px;} div#contenido{width:80%;}}
+
+@media screen and (max-width:600px){
+h1{font-size:11px;} h2{font-size:8px;} div#contenido{width:60%;}}
+
+@media screen and (max-width:400px){
+{h1{font-size:8px;}  h2{font-size:5px;} div#contenido{ width:40%;}}
+
